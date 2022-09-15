@@ -23,7 +23,7 @@ export const MeetupForm = () => {
     const [idGet, setIdGet] = useState("");
     const [idUpdate, setIdUpdate] = useState("");
 
-    const [token, setToken] = useState("");
+    const token = JSON.parse(localStorage.getItem("token"));
 
     const nameChangeHandler = (e) => {
         setName(e.target.value);
@@ -116,16 +116,6 @@ export const MeetupForm = () => {
 
     return (
         <MeetupFormWrapper>
-            <TokenWrapper>
-                <h3>Токен</h3>
-                <InputWrapper
-                    value={token}
-                    onChange={(e) => setToken(e.target.value)}
-                    type="text"
-                    placeholder="Enter access token"
-                />
-            </TokenWrapper>
-
             <Block>
                 <h3>Создание митапа</h3>
                 <InputWrapper

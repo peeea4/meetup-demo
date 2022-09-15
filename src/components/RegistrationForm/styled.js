@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
-export const AuthFormWrapper = styled.div``;
-
-export const Block = styled.div`
+export const AuthFormWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
