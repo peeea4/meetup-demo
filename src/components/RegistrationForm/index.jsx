@@ -25,9 +25,12 @@ export const RegistrationForm = ({ setStatus }) => {
         })
             .then((json) => json.json())
             .then((data) => {
-                localStorage.setItem("token", JSON.stringify(data.token));
-                setStatus(true);
-            });
+                if (data.token) {
+                    localStorage.setItem("token", JSON.stringify(data.token));
+                    setStatus(true);
+                }
+            })
+            .catch((err) => console.log(err));
     };
 
     return (
