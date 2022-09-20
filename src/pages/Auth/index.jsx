@@ -3,7 +3,6 @@ import { LoginForm } from "../../components/LoginForm";
 import { RegistrationForm } from "../../components/RegistrationForm";
 
 export const Auth = ({ setStatus }) => {
-    console.log(setStatus);
     return (
         <Routes>
             <Route path="/" element={<LoginForm setStatus={setStatus} />} />

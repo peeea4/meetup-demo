@@ -22,11 +22,12 @@ export const LoginForm = ({ setStatus }) => {
                 "Content-Type": "application/json;charset=utf-8",
             },
         })
-            .then((json) => json.json())
+            .then((res) => res.json())
             .then((data) => {
-                localStorage.setItem("token", JSON.stringify(data.token));
-                console.log(setStatus);
-                setStatus(true);
+                if (data.token) {
+                    localStorage.setItem("token", JSON.stringify(data.token));
+                    setStatus(true);
+                }
             });
     };
 
