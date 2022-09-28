@@ -6,7 +6,7 @@ export const LayoutAuth = () => {
             <Outlet />
             <nav>
                 <NavLink to="/login"></NavLink>
-                <NavLink to="/regi"></NavLink>
+                <NavLink to="/registration"></NavLink>
             </nav>
         </>
     );

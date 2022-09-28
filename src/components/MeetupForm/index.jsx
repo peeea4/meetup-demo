@@ -1,12 +1,5 @@
 import { useState } from "react";
-import {
-    Block,
-    BtnWrapper,
-    InputWrapper,
-    MeetupFormWrapper,
-    SimpleRequestWrapper,
-    TokenWrapper,
-} from "./styled";
+import { Block, BtnWrapper, InputWrapper, MeetupFormWrapper, SimpleRequestWrapper } from "./styled";
 
 export const MeetupForm = () => {
     const [name, setName] = useState("");

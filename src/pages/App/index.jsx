@@ -8,7 +8,7 @@ export const App = () => {
 
     return (
         <>
-            <CreateRole></CreateRole>
+            <CreateRole />
             {!isLogin ? <Auth setStatus={setStatus} /> : <Home />}
         </>
     );

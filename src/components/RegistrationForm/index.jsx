@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { json, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Paragraph } from "../LoginForm/styled";
 import { AuthFormWrapper, BtnWrapper, InputWrapper } from "./styled";
 
