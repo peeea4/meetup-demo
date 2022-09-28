@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/meetup-demo/static/js/main.242fde83.js",
+    "main.js": "/meetup-demo/static/js/main.9c7442b6.js",
     "index.html": "/meetup-demo/index.html",
-    "main.242fde83.js.map": "/meetup-demo/static/js/main.242fde83.js.map"
+    "main.9c7442b6.js.map": "/meetup-demo/static/js/main.9c7442b6.js.map"
   },
   "entrypoints": [
-    "static/js/main.242fde83.js"
+    "static/js/main.9c7442b6.js"
   ]
 }
